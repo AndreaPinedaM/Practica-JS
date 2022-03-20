@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width  initial-scale=1.0">
+    <link rel="stylesheet" href="./Pokedex.css">
+    <title>Pokedex</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div id="top-container">
+        <img id="ball" src="./pokeball.png">
+        <img src="./pokemon-logo.png" width="140" height="50">
+    </div>
+    <div id="search">
+        <img src="ash.png" alt="Ash" width="200">
+        <input type="text" placeholder="Pokemon" id="pokename" name="pokename">
+        <button onclick="fetchPokemon()">Cambiar pokemon</button>
+    </div>
+    <section id="main">
+            <ul>
+                <li>
+                    <img src="./Pokeball2.png" alt="Pokemon" id="pokeimg">
+                </li>
+                <li>
+                    <table>
+                        <tr>
+                            <th><p id="pname"></p></th>
+                            <th><p id="type"></p></th>
+                        </tr>
+                        <tr id="sts">
+                            <td colspan="2">
+                            <p id="hp">hp:  </p>
+                            <p id="attack">Attack:  </p>
+                            <p id="defense">Defense:  </p>
+                            <p id="special-a">Special Attack:  </p>
+                            <p id="special-d">Special Defense:  </p>
+                            <p id="speed">Speed</p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li><div class="circle"></div></li>
+            </ul>
+    </section>
+        <img id="pika" src="./pikachu-ball.webp" width="200">
+</body>
+<footer>
+    <script src="./Pokedex.js"></script>
+</footer>
+</html>
